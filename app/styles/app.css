@@ -59,7 +59,7 @@ form {
   padding: 1em;
   margin: 1vh auto;
   max-width: 100%;
-  min-height: ;
+  min-height: 50vh;
   width: 600px;
 }
 form label {
@@ -69,7 +69,9 @@ form label {
 form select {
   min-width: 200px;
 }
-
+.form-group, .form-select {
+  margin-bottom: 4vh;
+}
 footer {
   border-top: 1px solid rgb(207, 207, 207);
   text-align: center;
