@@ -1,7 +1,10 @@
 # test-ember-select
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Deploy URL: https://test-ember-select.netlify.app/
+Trying to figure out the minimal amount of code required to make a native select element work in Ember. 
+It also must work with NVDA and Firefox (at a minimum).
+
+The documentation so far: https://emberjs-1.gitbook.io/ember-component-patterns/form-components/select-element
 
 ## Prerequisites
 
