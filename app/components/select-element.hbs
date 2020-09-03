@@ -1,0 +1,8 @@
+<div class="form-select">
+  <label for={{this.selectId}}>{{this.selectLabelText}}</label>
+  <select id={{this.selectId}} name={{this.selectName}}>
+    {{#each this.selectOptions as |selectOption|}}
+      <option value={{selectOption.city}}>{{selectOption.city}}</option>
+    {{/each}}
+  </select>
+</div>
