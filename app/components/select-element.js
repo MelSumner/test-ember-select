@@ -7,7 +7,7 @@ import { tracked } from '@glimmer/tracking';
 export default class SelectElementComponent extends Component {
   @tracked selectElementOption;
   selectId = 'select-' + guidFor(this); 
-  selectLabelText = 'Select A City';
+  selectLabelText = 'Select Your Favorite City';
   selectName = 'cityPreference';
 
   @action
