@@ -5,7 +5,6 @@
       {{#each selectElementOptions as |selectElementOption|}}
         <option value={{selectElementOption}} selected={{eq this.selectElementOption selectElementOption}}>{{selectElementOption}}</option>
       {{/each}}
-      <option value="San Francisco" selected={{eq this.selectElementOption "San Francisco"}}>{{concat " " "San Francisco"}}</option>
     </select>
   {{/let}}
 </div> 

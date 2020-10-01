@@ -10,7 +10,7 @@ export default class SelectElementComponent extends Component {
   selectLabelText = 'Select Your Favorite City';
   selectName = 'cityPreference';
 
-  austin = "Austin";
+  selectElementOptions = ['Austin', 'Boston', 'Chicago'];
 
   @action
   setSelection(changeEvent) {
