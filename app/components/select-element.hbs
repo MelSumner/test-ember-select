@@ -3,7 +3,7 @@
   <label for={{this.selectId}}>{{this.selectLabelText}}</label>
 
   {{#let (array 'Austin' 'Portland' 'Boston') as |selectElementOptions|}}
-    <select id={{this.selectId}} name={{this.selectName}} {{on "change" (fn this.setSelection) value="target.value"}}>
+    <select id={{this.selectId}} name={{this.selectName}} {{on "change" this.setSelection}}>
       {{#each selectElementOptions as |selectElementOption|}}
         <option value={{selectElementOption}} selected={{eq this.selectElementOption selectElementOption}}>
           {{selectElementOption}}
