@@ -1,16 +1,20 @@
 <div class="form-select">
+
   <label for={{this.selectId}}>{{this.selectLabelText}}</label>
-  <select 
-    id={{this.selectId}}
-    name={{this.selectName}}
-    {{on "change" (fn this.setSelection) value="target.value"}}
-  >
-    {{#each this.selectOptions as |selectOption|}}
-      <option
-        value={{selectOption.city}}
-        selected={{eq selectOption.city this.selectedValue}}>
-        {{selectOption.city}}
+
+  {{#let (array 'Austin' 'Portland' 'Boston') as |selectElementOptions|}}
+  
+  <select id={{this.selectId}} name={{this.selectName}} {{on "change" (fn this.setSelection) value="target.value"}}>
+    
+    {{#each selectElementOptions as |selectElementOption|}}
+      
+      <option value={{selectElementOption}} selected={{eq this.selectElementOption}}>
+        {{selectElementOption}}
       </option>
+
     {{/each}}
+  
   </select>
+
+  {{/let}}
 </div>
