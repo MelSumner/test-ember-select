@@ -10,6 +10,8 @@ export default class SelectElementComponent extends Component {
   selectLabelText = 'Select Your Favorite City';
   selectName = 'cityPreference';
 
+  austin = "Austin";
+
   @action
   setSelection(changeEvent) {
     let value = changeEvent.target.value;
