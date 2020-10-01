@@ -4,10 +4,8 @@
     <select id="city-select" name={{this.selectName}} {{on "change" this.setSelection}}>
       {{#each selectElementOptions as |selectElementOption|}}
         <option value={{selectElementOption}} selected={{eq this.selectElementOption selectElementOption}}>{{selectElementOption}}</option>
-
       {{/each}}
       <option value="San Francisco" selected={{eq this.selectElementOption "San Francisco"}}> {{"San Francisco"}}</option>
     </select>
   {{/let}}
-
-</div>
+</div> 
