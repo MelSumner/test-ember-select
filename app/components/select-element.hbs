@@ -1,8 +1,16 @@
 <div class="form-select">
   <label for={{this.selectId}}>{{this.selectLabelText}}</label>
-  <select id={{this.selectId}} name={{this.selectName}}>
+  <select 
+    id={{this.selectId}}
+    name={{this.selectName}}
+    {{on "change" (fn this.setSelection) value="target.value"}}
+  >
     {{#each this.selectOptions as |selectOption|}}
-      <option value={{selectOption.city}} selected={{eq selectOption.city this.selectedValue}}> {{selectOption.city}}</option>
+      <option
+        value={{selectOption.city}}
+        selected={{eq selectOption.city this.selectedValue}}>
+        {{selectOption.city}}
+      </option>
     {{/each}}
   </select>
 </div>
